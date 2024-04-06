@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleDame.css">
+    <script src="./scriptDame.js" defer></script>
+    <title>Dame</title>
+</head>
+<body>
+    <header>
+        <h1>Jeu de Dame</h1>
+        <button onclick="startGame();">Commencer</button>
+    </header>
+    
+    <!--<main class="plateau">
+         <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2queen">
+                <img class='crown2'src="./img/couronne2.png" alt="">
+            </div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc">
+            
+        </div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j2pion"></div>
+        </div>
+        <div class="case blanc"></div>
+
+
+
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+        <div class="case noire"></div>
+        <div class="case blanc"></div>
+
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1queen">
+                <img class='crown1'src="./img/couronne1.png" alt="">
+            </div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+        <div class="case noire">
+            <div class="pion j1pion"></div>
+        </div>
+        <div class="case blanc"></div>
+ -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+header{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.plateau{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 80vh;
+    width: 80vh;
+    border: 2px solid black;
+}
+.noire{
+    height: 100%;
+    width: 100%;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blanc{
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pion{
+    transition-duration: .3s;
+}
+.pion:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.j2pion{
+    height: 90%;
+    width: 90%;
+    border-radius: 2em;
+    background-color: darkgray;
+}
+.j1pion{
+    height: 90%;
+    width: 90%;
+    border-radius: 2em;
+    background-color: burlywood;
+}
+.j2queen{
+    height: 90%;
+    width: 90%;
+    border-radius: 2em;
+    background-color: darkgray;
+    position: relative;
+}
+.j1queen{
+    height: 90%;
+    width: 90%;
+    border-radius: 2em;
+    background-color: burlywood;
+    position: relative;
+
+}
+.j2queen > img,
+.j1queen > img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);;
+}
+.selectedj1{
+    height: 90%;
+    width: 90%;
+    border-radius: 2em;
+    background-color: burlywood;
+    position: relative;
+    animation: selectedj1 1s linear infinite alternate;
+}
+.selectedj2{
+    height: 90%;
+    width: 90%;
+    border-radius: 2em;
+    background-color: darkgray;
+    position: relative;
+    animation: selectedj2 1s linear infinite alternate;
+}
+@keyframes selectedj1{
+    0%{
+        border: 2px pink solid;
+    }
+    100%{
+        border: 2px white solid;
+    }
+}
+@keyframes selectedj2{
+    0%{
+        border: 2px pink solid;
+    }
+    100%{
+        border: 2px black solid;
+    }
+}
